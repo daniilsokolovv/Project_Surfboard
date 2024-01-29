@@ -1,0 +1,32 @@
+.socials__item {
+	display: inline-flex;
+	vertical-align: middle;
+	margin-right: 6px;
+	opacity: 0.4;
+	width: 24px;
+	height: 24px;
+
+		&--vk {
+			background: url("./../img/icon/css_sprites.png") -10px -10px;
+		}	
+
+		&--f {
+			background: url("./../img/icon/css_sprites.png") -10px -54px;
+		}
+
+		&--ins {
+			background: url("./../img/icon/css_sprites.png") -10px -98px;
+		}
+
+		&--tw {
+			background: url("./../img/icon/css_sprites.png") -10px -142px;
+		}
+
+		&:hover	{
+			cursor: pointer;
+			opacity: 1;
+			scale: 1.02;
+			transition: scale .2s, ease-out;
+
+		}
+}
