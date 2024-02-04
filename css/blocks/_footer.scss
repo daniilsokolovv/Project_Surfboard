@@ -1,20 +1,33 @@
 .footer {
+	position: absolute;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-around;
+ 	position: relative;
+ 	// height: 5.1667rem;
+ 	height: rem(107px);
+	background: #fff;
+	margin-top: auto;
+
+	@include phones {
+		height: rem(171px);
+	}
+}
+
+
+.footer-container{
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	position: relative;
-	height: 93px;
+	justify-content: space-between;
+
+	@include phones {
+		justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	}
 }
 
 .footer__col {
-	display: flex;
-	align-items: center;
+  	display: flex;
+  	align-items: center;
+  }
 
-	&--left {
-		padding-left: 80px;
-	}
-
-	&--right {
-		padding-right: 80px;
-	}
-}

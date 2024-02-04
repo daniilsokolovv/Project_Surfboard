@@ -1,18 +1,26 @@
 .btn {
-	width: 156px;
-	font-size: 16px;
+	cursor: pointer;
+	width: 8.6667rem;
+	font-size: 0.8889rem;
 	font-weight: 800;
-	padding: 21px 41px;
+	padding: 1.1667rem 2.2778rem;
 	text-transform: uppercase;
-	border-radius: 100px;
+	border-radius: 5.5556rem;
 	line-height: 1;
 	text-decoration: none;
 	display: inline-block;
 	border: none;
 
+	@include phones {
+		font-size: rem(18px);
+		width: rem(200px);
+		padding: rem(28px) rem(36px);
+	}
+
+	
+
 	&.btn--theme--yellow {
 		background: #FEDB3F;
-		// color: $black;
 		color: #000;
 	
 		&:hover {
@@ -25,8 +33,17 @@
 		font-weight: 400;
 		text-transform: capitalize;
 		padding: 0;
-		width: 68px;
-		margin-left: 22px;
+		width: 3.7778rem;
+		margin-left: 1.2rem;
+
+		@include tablets {
+			margin-left: 2rem;
+		}
+
+		@include phones	{
+			width: 5rem;
+			margin-left: 2rem;
+		}
 	
 		&:hover {
 			color: #FFD517;

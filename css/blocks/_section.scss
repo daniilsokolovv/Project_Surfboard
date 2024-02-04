@@ -1,24 +1,36 @@
+
 .section {
 	height: 100vh;
-	min-height: 652px;
+	min-height: 36.2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
 	&--font-color--white {
-		color:#fff;
+		color:#fff;}
 
-		.section__title {
-			color: inherit;
-		}
-	}
 
 	&__title {
-		font-size: 48px;
+		font-size: 2.6667rem;
 		font-weight: 700;
-		margin-bottom: 60px;
+		margin-bottom: 3.3rem;
 		text-transform: uppercase;
 		text-align: center;
+		// color: inherit;
 		color: #000;
+
+		&--white {
+			color: #fff;
+		}
+
+		@include tablets {
+			padding-top: 23% ;
+			margin-bottom: rem(28px);
+		}
+
+		@include phones	{
+			padding: 0;
+			margin-bottom: rem(36px);
+		}
 	}
 }

@@ -1,36 +1,30 @@
 .header {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
+	position: relative;
 }
 
-.menu__list {
+.logo {
+	width: 55px;
+	height: 39px;
+	fill: white;
 	display: flex;
-	align-items: center;
-}
-
-.menu__link {
-	text-decoration: none;
-}
-
-.menu__item {
-	margin-right: 22px;
 	
-	&:last-child {
-		margin-right: 0;
+	&:hover {
+		cursor: pointer;
+		opacity: .8;
+		fill: azure;
 	}
 }
 
-.phone-number {
-	font-size: 22px;
-	text-decoration: none;
-	display: flex;
-	align-items: center;
+.phone-number.header__phone-number {
+	@include tablets {
+		display: none;
+	}
 }
 
-.phone-number__icon-elem {
-	width: 12px;
-	height: 12px;
-	margin-right: 6px;
-}
+
+
+
 

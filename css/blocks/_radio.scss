@@ -2,7 +2,13 @@
 	display: flex;
 	cursor: pointer;
 	user-select: none;
-	margin-right: 17px;
+	margin-right: 0.94rem;
+
+	@include tablets {
+		margin-right: 1.5rem;
+		margin-bottom: .3rem;
+	}
+
 
 	&:last-child {
 		margin-right: 0;
@@ -13,7 +19,7 @@
 		border-radius: 0;
 		
 			&:before {
-				background: url('../img/icon/checkmark.svg') no-repeat;
+				background: url('../img/icon/checkmark.svg') center center 	/ contain no-repeat;
 			}
 		}
 	}
@@ -30,17 +36,17 @@
 }
 
 .radio__visible {
-	width: 26px;
-	height: 26px;
+	width: 1.4rem;
+	height: 1.4rem;
 	position: relative;
 	border-radius: 50%;
 	background: #fff;
-	margin-right: 10px;
+	margin-right: 0.5556rem;
 
 	&::before {
 		content: '';
-		width: 14px;
-		height: 14px;
+		width: 0.7778rem;
+		height: 0.7778rem;
 		background: #FEDB3F;
 		position: absolute;
 		border-radius: 50%;
@@ -50,3 +56,7 @@
 		transform: translate(-50%, -50%);
 	}
 }
+
+
+
+
