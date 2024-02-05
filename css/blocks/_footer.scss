@@ -3,11 +3,10 @@
  	display: flex;
  	align-items: center;
  	justify-content: space-around;
- 	position: relative;
  	// height: 5.1667rem;
  	height: rem(107px);
 	background: #fff;
-	margin-top: auto;
+	bottom:0;
 
 	@include phones {
 		height: rem(171px);
