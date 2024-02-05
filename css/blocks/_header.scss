@@ -16,6 +16,11 @@
 		opacity: .8;
 		fill: azure;
 	}
+	@include tablets {
+		&-container{
+			display: none;
+		}
+	}
 }
 
 .phone-number.header__phone-number {
@@ -24,7 +29,18 @@
 	}
 }
 
+.hero__header--blue-logo {
+	display: none;
 
+	@include tablets {
+		display: block;
+	}
+}
 
+.header--blue-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 

@@ -102,14 +102,18 @@ img {
 
 .hero__header--blue {
   display: none;
+  height: 91px;
+  width: 100%;
+  background: #1968B1;
+  margin-top: auto;
+  z-index: 1000;
 }
 @media screen and (max-width: 768px) {
   .hero__header--blue {
-    display: block;
-    position: absolute;
-    background: #1968B1;
-    height: 91px;
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
   }
 }
 
@@ -215,11 +219,37 @@ img {
   opacity: 0.8;
   fill: azure;
 }
+@media screen and (max-width: 768px) {
+  .logo-container {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
     display: none;
   }
+}
+
+.hero__header--blue-logo {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hero__header--blue-logo {
+    display: block;
+  }
+}
+
+.header--blue-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
@@ -1151,7 +1181,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 9px;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
