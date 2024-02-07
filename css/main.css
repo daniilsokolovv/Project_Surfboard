@@ -349,7 +349,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 9px;
 }
 @media screen and (max-width: 768px) {
   .burger {
@@ -357,8 +356,9 @@ img {
     display: -ms-inline-flexbox;
     display: inline-flex;
     position: fixed;
-    right: 0;
-    margin-right: 25px;
+    top: 32px;
+    right: 3%;
+    z-index: 100;
   }
 }
 

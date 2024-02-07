@@ -5,14 +5,13 @@
 	height: 24px;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 9px;
-	
 	
 	@include tablets {
 		display: inline-flex;
 		position: fixed;
-		right: 0;
-		margin-right: 25px;
+    top: 32px;
+    right: 3%;
+    z-index: 100
 	}
 }
 
@@ -21,5 +20,6 @@
 	background: #fff;
 	height: 4px;
 	border-radius: 10px;
-	
 }
+
+
