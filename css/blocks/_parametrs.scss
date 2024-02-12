@@ -1,0 +1,55 @@
+.parametrs {
+	width: rem(91px);
+	height:rem(91px);
+	top: rem(-91px);
+	position: relative;
+	
+	&__list {
+		visibility: hidden;
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		left: 100%;
+		padding: 24px 25px 27px 30px;
+		width: rem(273px);
+		height: rem(291px);
+		background-color: #D5D5D5;
+		border-radius: 4px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: rem(16px);
+		color: #000;
+	}
+
+	&__left{
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon{
+		width: rem(32px);
+		height: rem(32px);
+		fill: #000;
+		margin-right: rem(12px);
+	}
+
+	&__text{
+		font-weight: 500;
+	}
+
+	&__desc{
+		font-weight: 400;
+	}
+	&:hover &__list {
+		visibility:visible;
+		opacity: 1;
+		transition: .4s;
+	}
+}
