@@ -13,13 +13,13 @@
 	align-items: center;
 }
 
-	&__left,&__right {
+	&__image,&__parametrs {
 		width: 50%;
 
 		@include tablets {
 			display: flex;
 			justify-content: center;
-			width: 60%;
+			width: 70%;
 		}
 	}
 	
@@ -27,7 +27,7 @@
 	@include phones {
 			&__left {
 			margin-bottom: rem(25px);
-			width: 70%;
+			// width: 70%;
 		}
 	 }
 	

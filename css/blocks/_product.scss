@@ -53,13 +53,13 @@
 
 	@include phones {
 		min-width: 380px;
-		font-size: 18px;
+		font-size: rem(18px);
 		margin-bottom: 10px;
 	}
 
 	@include mobiles {
 		min-width: 100px;
-		font-size: rem(12px);
+		font-size: rem(22px);
 	}
 }
 
