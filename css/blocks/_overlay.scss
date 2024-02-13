@@ -1,7 +1,9 @@
+@include tablets {
+	
 	.overlay {
 		height: 100%;
 		width: 100%;
-		background-color: #1968B1;
+		background-color: #666;
 		position: fixed;
 		// top: 0;
 		top: -100%;
@@ -10,9 +12,22 @@
 		justify-content: center;
 		transition: all .4s;
 		z-index: 10;
-	}
 
-	.overlay--active {
-		top: 0;
-		opacity: 1;
+		&--active {
+			top: 0;
+			opacity: 1;
+		}
+	 }
+
+	.menu__list{
+			flex-direction: column;
+		}
+
+
+	.menu__item{
+		margin-right: 0;
+		margin-bottom: 47px;
+		font-size: 36px;
+		color: #fff;
 	}
+}

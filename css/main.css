@@ -399,31 +399,43 @@ img {
           transform: rotate(-45deg) translateY(-7px) translateX(7px);
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  background-color: #1968B1;
-  position: fixed;
-  top: -100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  z-index: 10;
+@media screen and (max-width: 768px) {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #666;
+    position: fixed;
+    top: -100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 10;
+  }
+  .overlay--active {
+    top: 0;
+    opacity: 1;
+  }
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__item {
+    margin-right: 0;
+    margin-bottom: 47px;
+    font-size: 36px;
+    color: #fff;
+  }
 }
-
-.overlay--active {
-  top: 0;
-  opacity: 1;
-}
-
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
