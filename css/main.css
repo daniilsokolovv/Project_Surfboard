@@ -361,6 +361,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   z-index: 15;
@@ -381,6 +382,8 @@ img {
   background: #fff;
   height: 4px;
   border-radius: 10px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .burger--active .burger__plank:nth-child(1) {
@@ -431,9 +434,12 @@ img {
   }
   .menu__item {
     margin-right: 0;
-    margin-bottom: 47px;
-    font-size: 36px;
+    margin-bottom: 2.6111111111rem;
+    font-size: 2rem;
     color: #fff;
+  }
+  .menu__item:last-child {
+    margin-bottom: 0;
   }
 }
 .features {

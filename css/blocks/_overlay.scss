@@ -26,8 +26,13 @@
 
 	.menu__item{
 		margin-right: 0;
-		margin-bottom: 47px;
-		font-size: 36px;
+		margin-bottom: rem(47px);
+		font-size: rem(36px);
 		color: #fff;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
 	}
 }
