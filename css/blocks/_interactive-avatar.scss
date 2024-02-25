@@ -6,7 +6,7 @@
 	overflow: hidden;
 	position: relative;
 
-	&--active {
+	&.active {
 		border-color:#FEDB3F;
 	}
 
@@ -15,7 +15,7 @@
 	}
 }
 
-.interactive-avatar-link {
+.interactive-avatar__link {
 	position: absolute;
 	top: 0;
 	left: 0;

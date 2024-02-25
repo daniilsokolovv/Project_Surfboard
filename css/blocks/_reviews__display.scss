@@ -8,14 +8,25 @@
 	}
 }
 
-.reviews__display-inner {
+.reviews__item {
 	display: flex;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
 
 	@include tablets {
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
 	}
+}
+
+.reviews__item.active{
+	opacity: 1;
+	position: static;
 }
 
 .reviews__avatar {
