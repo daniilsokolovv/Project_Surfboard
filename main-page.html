@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./scripts/bxslider-4-4.2.12/dist/jquery.bxslider.css">
+
 	<link rel="stylesheet" href="./css/main.css">
-
-
-
 	<title>Surfboard</title>
+
 </head>
 
 <body>
@@ -173,7 +173,6 @@
 											stroke-width="2" stroke-linecap="round" />
 									</svg>
 								</a>
-
 								<a href="" class="slider-arrow__icon slider-arrow__icon--right">
 									<svg width="15" height="29" viewBox="0 0 15 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M14 28L1.91422 15.9142C1.13317 15.1332 1.13317 13.8668 1.91421 13.0858L14 1" stroke="black"
@@ -183,7 +182,94 @@
 
 							</div>
 						</div>
-						<ul class="shop__list">
+						<ul class="shop__list slider">
+							<li class="shop__slide">
+								<div class="shop__slide__image">
+									<img src="./img/image/shop_surf1.png" alt="surf image" class="shop__image">
+								</div>
+								<div class="shop__slide__parametrs">
+									<div class="click-icon">
+										<a href="#" class="click-icon__link">
+											<svg class="click-icon__elem">
+												<use xlink:href="./img/icon/sprite.svg#arrows 1" />
+											</svg>
+											<div class="click-icon__title">Параметры</div>
+										</a>
+										<div class="parametrs">
+											<ul class="parametrs__list">
+												<li class="parametrs__item">
+													<div class="parametrs__left">
+														<svg class="parametrs__icon">
+															<use xlink:href="./img/icon/sprite.svg#length" />
+														</svg>
+														<div class="parametrs__title"> Длина доски</div>
+													</div>
+													<div class="parametrs__desc">от 2,5 м</div>
+												</li>
+												<li class="parametrs__item">
+													<div class="parametrs__left">
+														<svg class="parametrs__icon">
+															<use xlink:href="./img/icon/sprite.svg#width" />
+														</svg>
+														<div class="parametrs__text">Ширина</div>
+													</div>
+													<div class="parametrs__desc">от 40 см</div>
+												</li>
+												<li class="parametrs__item">
+													<div class="parametrs__left"><svg class="parametrs__icon">
+															<use xlink:href="./img/icon/sprite.svg#thickness" />
+														</svg>
+														<div class="parametrs__text">Толщина</div>
+													</div>
+													<div class="parametrs__desc">8 см</div>
+												</li>
+												<li class="parametrs__item">
+													<div class="parametrs__left"><svg class="parametrs__icon">
+															<use xlink:href="./img/icon/sprite.svg#life time" />
+														</svg>
+														<div class="parametrs__text">Срок службы</div>
+													</div>
+													<div class="parametrs__desc">5 лет</div>
+												</li>
+												<li class="parametrs__item">
+													<div class="parametrs__left"><svg class="parametrs__icon">
+															<use xlink:href="./img/icon/sprite.svg#weight" />
+														</svg>
+														<div class="parametrs__text">Вес</div>
+													</div>
+													<div class="parametrs__desc">7-8 кг</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="product">
+										<div class="product__title">Лонгборд 2.0</div>
+										<div class="product__desc">Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
+											разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие
+											волны и не спеша, не прилагая особых усилий ехать по ним.
+										</div>
+										<div class="product__option">
+											<dl>
+												<dt>Длина доски</dt>
+												<dd>от 2,5 метров</dd>
+											</dl>
+											<dl>
+												<dt>Ширина доски</dt>
+												<dd>от 40 сантиметров</dd>
+											</dl>
+										</div>
+										<div class="product__price__footer">
+											<div class="product__price">
+												<div class="product__price__value">7000</div>
+												<div class="product__price__currency">₽</div>
+											</div>
+											<div class="product__price__btn">
+												<a href="#" class="btn btn--theme--yellow">Заказать</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
 							<li class="shop__slide">
 								<div class="shop__slide__image">
 									<img src="./img/image/shop_surf1.png" alt="surf image" class="shop__image">
@@ -274,183 +360,377 @@
 						</ul>
 					</div>
 				</div>
-		</div>
-		</section>
-		<section class="section reviews-section">
-			<div class="container">
-				<h2 class="section__title">Отзывы</h2>
-				<div class="reviews">
-					<div class="reviews__display">
-						<div class="reviews__display-inner">
-							<div class="reviews__avatar">
-								<img src="./img/image/big avatar.png" alt="big avatar" class="reviews__avatar-img">
+			</section>
+			<section class="section team-section">
+				<div class="container">
+					<h2 class="section__title">Команда</h2>
+					<ul class="team team--version--desktop">
+						<li class="team__item">
+							<div class="team__member">
+								<img src="./img/image/team-ava-1.png" alt="team ava" class="team__member__img">
 							</div>
-							<article class="reviews__content">
-								<h3 class="reviews__title">Лучший дизайн</h3>
-								<div class="reviews__text">
-									<p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в
-										SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге
-										получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-									</p>
+							<button class="team__title" type="button" id="button">
+								Борис Федорович
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__content-block">
+									<div class="team__content-block__title">
+										Главный технолог
+									</div>
+									<div class="team__content-block__desc">
+										Отвечает за материалы и разработку досок
+									</div>
 								</div>
-								<div class="reviews__author">Ольга Макарова
+							</div>
+						</li>
+						<li class="team__item">
+							<div class="team__member">
+								<img src="./img/image/team-ava-2.png" alt="team ava" class="team__member__img">
+							</div>
+							<button class="team__title" type="button" id="button">
+								Ольга Невзорова
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__content-block">
+									<div class="team__content-block__title">
+										Дизайнер
+									</div>
+									<div class="team__content-block__desc">
+										Создает дизайн серфбордов
+									</div>
 								</div>
-							</article>
-						</div>
-					</div>
-					<ul class="reviews__switcher">
-						<li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-							<a href="#" class="interactive-avatar-link">
-								<img src="./img/image/avatar1.png" alt="avatar1" class="interactive-avatar__img">
-							</a>
+							</div>
 						</li>
-						<li class="reviews__switcher-item interactive-avatar">
-							<a href="#" class="interactive-avatar-link">
-								<img src="./img/image/avatar2.png" alt="avatar2" class="interactive-avatar__img">
-							</a>
+						<li class="team__item">
+							<div class="team__member">
+								<img src="./img/image/team-ava-3.png" alt="team ava" class="team__member__img">
+							</div>
+							<button class="team__title" type="button" id="button">
+								Ингвар Нильсон
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__content-block">
+									<div class="team__content-block__title">
+										Спортсмен
+									</div>
+									<div class="team__content-block__desc">
+										Участвует в разработке серфбордов
+									</div>
+								</div>
+							</div>
 						</li>
-						<li class="reviews__switcher-item interactive-avatar">
-							<a href="#" class="interactive-avatar-link">
-								<img src="./img/image/avatar3.png" alt="avatar3" class="interactive-avatar__img">
-							</a>
+						<li class="team__item">
+							<div class="team__member">
+								<img src="./img/image/team-ava-4.png" alt="team ava" class="team__member__img">
+							</div>
+							<button class="team__title" type="button" id="button">
+								Екатерина Иванова
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__content-block">
+									<div class="team__content-block__title">
+										Тестировщик
+									</div>
+									<div class="team__content-block__desc">
+										Отвечает за разработку новых продуктов
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="team team--version--mobile">
+						<li class="team__item">
+							<button class="team__title" type="button">
+								Борис Федорович
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__content-block">
+									<div class="team__member">
+										<img src="./img/image/team-ava-1.png" alt="team ava" class="team__member__img">
+									</div>
+									<div class="team__content-block__title">
+										Главный технолог
+									</div>
+									<div class="team__content-block__desc">
+										Отвечает за материалы и разработку досок
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="team__item">
+							<button class="team__title" type="button">
+								Ольга Невзорова
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__content-block">
+									<div class="team__member">
+										<img src="./img/image/team-ava-2.png" alt="team ava" class="team__member__img">
+									</div>
+									<div class="team__content-block__title">
+										Дизайнер
+									</div>
+									<div class="team__content-block__desc">
+										Создает дизайн серфбордов
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="team__item">
+							<button class="team__title" type="button">
+								Ингвар Нильсон
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__member">
+									<img src="./img/image/team-ava-3.png" alt="team ava" class="team__member__img">
+								</div>
+								<div class="team__content-block">
+									<div class="team__content-block__title">
+										Спортсмен
+									</div>
+									<div class="team__content-block__desc">
+										Участвует в разработке серфбордов
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="team__item">
+							<button class="team__title" type="button">
+								Екатерина Иванова
+								<img src="./img/icon/triangle.png" alt="triangle img" class="team__title__img">
+							</button>
+							<div class="team__content">
+								<div class="team__member">
+									<img src="./img/image/team-ava-4.png" alt="team ava" class="team__member__img">
+								</div>
+								<div class="team__content-block">
+									<div class="team__content-block__title">
+										Тестировщик
+									</div>
+									<div class="team__content-block__desc">
+										Отвечает за разработку новых продуктов
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
-			</div>
-		</section>
-		<section class="section order-section">
-			<div class="container">
-				<h2 class="section__title section__title--white">Закажите доску</h2>
-				<form class="form">
-					<div class="form__col">
-						<div class="form__row">
-							<label class="form__block">
-								<div class="form__title">Имя</div>
-								<input type="text" class="form__input">
-							</label>
-							<label class="form__block">
-								<div class="form__title">Телефон</div>
-								<input type="text" class="form__input">
-							</label>
-						</div>
-						<div class="form__row">
-							<label class="form__block">
-								<div class="form__title">Улица</div>
-								<input type="text" class="form__input">
-							</label>
-						</div>
-						<div class="form__row">
-							<label class="form__block">
-								<div class="form__title">Дом</div>
-								<input type="text" class="form__input">
-							</label>
-							<label class="form__block">
-								<div class="form__title">Корпус</div>
-								<input type="text" class="form__input">
-							</label>
-							<label class="form__block">
-								<div class="form__title">Квартира</div>
-								<input type="text" class="form__input">
-							</label>
-							<label class="form__block">
-								<div class="form__title">Этаж</div>
-								<input type="text" class="form__input">
-							</label>
-						</div>
-					</div>
-					<div class="form__col">
-						<div class="form__row">
-							<label class="form__block">
-								<div class="form__title">Комментарий</div>
-								<textarea class="form__input form__input--textarea"></textarea>
-							</label>
-						</div>
-						<div class="form__controls">
-							<label class="radio">
-								<input type="radio" name="option" class="radio__elem">
-								<div class="radio__visible"></div>
-								<div class="radio__title">Оплата наличными</div>
-							</label>
-							<label class="radio">
-								<input type="radio" name="option" class="radio__elem">
-								<div class="radio__visible"></div>
-								<div class="radio__title">Оплата картой</div>
-							</label>
-						</div>
-						<div class="form__controls">
-							<label class="radio radio--checkbox">
-								<input type="checkbox" class="radio__elem">
-								<div class="radio__visible"></div>
-								<div class="radio__title">Не перезванивать</div>
-							</label>
-						</div>
-						<div class="form__btns">
-							<input type="submit" value="Заказать" class="btn btn--theme--yellow">
-							<input type="reset" value="Очистить" class="btn btn--theme--transparent">
-						</div>
-					</div>
-				</form>
-			</div>
-		</section>
-		<section class="section map-section">
-			<footer class="footer">
-				<div class="container footer-container">
-					<div class="footer__col footer__col--left">
-						<div class="contacts">
-							<div class="contacts__text">
-								<span>Москва, ул.Новый Арбат, д.31/12</span>
-							</div>
-							<a href="tel:+78009039090" class="phone-number phone-number--black">
-								<span class="phone-number__icon">
-									<!-- <img src="./img/icon/phone-black.png" class="phone-number__icon-elem" alt="phone icon"> -->
-									<svg class="phone-number__icon-elem phone-number__icon-elem--black">
-										<use xlink:href='./img/icon/sprite.svg#phone' />
-									</svg>
-								</span>
-								<span class="phone-number__text phone-number__text--black">
-									8 800 903 90 90
-								</span>
-							</a>
-						</div>
-					</div>
-					<div class="footer__col footer__col--right">
-						<div class="socials">
-							<ul class="socials__list">
-								<li class="socials__item socials__item--vk">
-									<a href="#" class="socials__link">
-										<svg class="socials__link-icon">
-											<use xlink:href='./img/icon/sprite.svg#vk' />
-										</svg>
-									</a>
+			</section>
+			<section class="section reviews-section">
+				<div class="container">
+					<h2 class="section__title">Отзывы</h2>
+					<div class="reviews">
+						<div class="reviews__display">
+							<ul class="reviews__list">
+								<li class="reviews__item active" data-linked="one">
+									<div class="reviews__avatar">
+										<img src="./img/image/big avatar.png" alt="big avatar" class="reviews__avatar-img">
+									</div>
+									<article class="reviews__content">
+										<h3 class="reviews__title">Лучший дизайн</h3>
+										<div class="reviews__text">
+											<p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в
+												SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге
+												получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
+											</p>
+										</div>
+										<div class="reviews__author">Ольга Макарова
+										</div>
+									</article>
 								</li>
-								<li class="socials__item socials__item--fb">
-									<a href="#" class="socials__link">
-										<svg class="socials__link-icon">
-											<use xlink:href='./img/icon/sprite.svg#fb' />
-										</svg>
-									</a>
+								<li class="reviews__item" data-linked="two">
+									<div class="reviews__avatar">
+										<img src="./img/image/avatar2.png" alt="big avatar" class="reviews__avatar-img">
+									</div>
+									<article class="reviews__content">
+										<h3 class="reviews__title">Нереальная скорость</h3>
+										<div class="reviews__text">
+											<p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
+												Surfboard и не пожалел: 1 место на соревнованиях.
+												Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+											</p>
+										</div>
+										<div class="reviews__author">Марк Брюлов
+										</div>
+									</article>
 								</li>
-								<li class="socials__item socials__item--in">
-									<a href="#" class="socials__link">
-										<svg class="socials__link-icon">
-											<use xlink:href='./img/icon/sprite.svg#in' />
-										</svg>
-									</a>
-								</li>
-								<li class="socials__item socials__item--tw">
-									<a href="#" class="socials__link">
-										<svg class="socials__link-icon">
-											<use xlink:href='./img/icon/sprite.svg#tw' />
-										</svg>
-									</a>
+								<li class="reviews__item" data-linked="three">
+									<div class="reviews__avatar">
+										<img src="./img/image/avatar3.png" alt="big avatar" class="reviews__avatar-img">
+									</div>
+									<article class="reviews__content">
+										<h3 class="reviews__title">Устойчивость и безопасность</h3>
+										<div class="reviews__text">
+											<p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как
+												безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом
+												роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+											</p>
+										</div>
+										<div class="reviews__author">Василий Поперечный
+										</div>
+									</article>
 								</li>
 							</ul>
 						</div>
+						<ul class="reviews__switcher">
+							<li class="reviews__switcher-item interactive-avatar active">
+								<a href="#" class="interactive-avatar__link" data-open="one">
+									<img src="./img/image/avatar1.png" alt="avatar1" class="interactive-avatar__img">
+								</a>
+							</li>
+							<li class="reviews__switcher-item interactive-avatar">
+								<a href="#" class="interactive-avatar__link" data-open="two">
+									<img src="./img/image/avatar2.png" alt="avatar2" class="interactive-avatar__img">
+								</a>
+							</li>
+							<li class="reviews__switcher-item interactive-avatar">
+								<a href="#" class="interactive-avatar__link" data-open="three">
+									<img src="./img/image/avatar3.png" alt="avatar3" class="interactive-avatar__img">
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</footer>
-		</section>
-	</div>
+			</section>
+			<section class="section order-section">
+				<div class="container">
+					<h2 class="section__title section__title--white">Закажите доску</h2>
+					<form class="form">
+						<div class="form__col">
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">Имя</div>
+									<input type="text" class="form__input">
+								</label>
+								<label class="form__block">
+									<div class="form__title">Телефон</div>
+									<input type="text" class="form__input">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">Улица</div>
+									<input type="text" class="form__input">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">Дом</div>
+									<input type="text" class="form__input">
+								</label>
+								<label class="form__block">
+									<div class="form__title">Корпус</div>
+									<input type="text" class="form__input">
+								</label>
+								<label class="form__block">
+									<div class="form__title">Квартира</div>
+									<input type="text" class="form__input">
+								</label>
+								<label class="form__block">
+									<div class="form__title">Этаж</div>
+									<input type="text" class="form__input">
+								</label>
+							</div>
+						</div>
+						<div class="form__col">
+							<div class="form__row">
+								<label class="form__block">
+									<div class="form__title">Комментарий</div>
+									<textarea class="form__input form__input--textarea"></textarea>
+								</label>
+							</div>
+							<div class="form__controls">
+								<label class="radio">
+									<input type="radio" name="option" class="radio__elem">
+									<div class="radio__visible"></div>
+									<div class="radio__title">Оплата наличными</div>
+								</label>
+								<label class="radio">
+									<input type="radio" name="option" class="radio__elem">
+									<div class="radio__visible"></div>
+									<div class="radio__title">Оплата картой</div>
+								</label>
+							</div>
+							<div class="form__controls">
+								<label class="radio radio--checkbox">
+									<input type="checkbox" class="radio__elem">
+									<div class="radio__visible"></div>
+									<div class="radio__title">Не перезванивать</div>
+								</label>
+							</div>
+							<div class="form__btns">
+								<input type="submit" value="Заказать" class="btn btn--theme--yellow">
+								<input type="reset" value="Очистить" class="btn btn--theme--transparent">
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="section map-section">
+				<footer class="footer">
+					<div class="container footer-container">
+						<div class="footer__col footer__col--left">
+							<div class="contacts">
+								<div class="contacts__text">
+									<span>Москва, ул.Новый Арбат, д.31/12</span>
+								</div>
+								<a href="tel:+78009039090" class="phone-number phone-number--black">
+									<span class="phone-number__icon">
+										<!-- <img src="./img/icon/phone-black.png" class="phone-number__icon-elem" alt="phone icon"> -->
+										<svg class="phone-number__icon-elem phone-number__icon-elem--black">
+											<use xlink:href='./img/icon/sprite.svg#phone' />
+										</svg>
+									</span>
+									<span class="phone-number__text phone-number__text--black">
+										8 800 903 90 90
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="footer__col footer__col--right">
+							<div class="socials">
+								<ul class="socials__list">
+									<li class="socials__item socials__item--vk">
+										<a href="#" class="socials__link">
+											<svg class="socials__link-icon">
+												<use xlink:href='./img/icon/sprite.svg#vk' />
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item socials__item--fb">
+										<a href="#" class="socials__link">
+											<svg class="socials__link-icon">
+												<use xlink:href='./img/icon/sprite.svg#fb' />
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item socials__item--in">
+										<a href="#" class="socials__link">
+											<svg class="socials__link-icon">
+												<use xlink:href='./img/icon/sprite.svg#in' />
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item socials__item--tw">
+										<a href="#" class="socials__link">
+											<svg class="socials__link-icon">
+												<use xlink:href='./img/icon/sprite.svg#tw' />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</div>
 	</div>
 
 	<nav class="fixed-menu">
@@ -489,7 +769,15 @@
 		<!-- </nav> -->
 	</div>
 
-	<script src="./scripts/script.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+	<script src="./scripts/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<!-- <script src="./scripts/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script> -->
+
+	<script src="./scripts/slider.js"></script>
+	<script src="./scripts/main.js"></script>
+	<script src="./scripts/content-active.js"></script>
+	<script src="./scripts/reviews.js"></script>
 
 </body>
 
