@@ -1,8 +1,18 @@
-.map-section {
-	background: url("../img/image/map.png") top center no-repeat; 
-	// top center no-repeat #666;
-	background-size: cover;
-	height: 100vh;
-	min-height: 36.2rem;
-	position: relative;
+.map {
+	height: 100%;
+	width: 100%;
+	
+	&-section {
+		position: relative;
+	}
 }
+
+// .map-section {
+// 	background: url("../img/image/map.png") top center no-repeat; 
+// 	// top center no-repeat #666;
+// 	background-size: cover;
+// 	height: 100vh;
+// 	min-height: 36.2rem;
+// 	position: relative;
+// }
+

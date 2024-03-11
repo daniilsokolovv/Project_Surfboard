@@ -1,6 +1,7 @@
 
 .section {
-	height: 100vh;
+	// height: 100vh;
+	height: 100%;
 	min-height: 36.2rem;
 	display: flex;
 	flex-direction: column;
@@ -20,7 +21,6 @@
 		margin-bottom: 3.3rem;
 		text-transform: uppercase;
 		text-align: center;
-		// color: inherit;
 		color: #000;
 
 		&--white {
@@ -28,8 +28,8 @@
 		}
 
 		@include tablets {
-			padding-top: 23% ;
 			margin-bottom: rem(28px);
+			// padding-top: 23%;
 		}
 
 		@include phones	{

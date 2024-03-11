@@ -1,4 +1,10 @@
 .reviews {
 	margin-bottom: 3.5556rem;
 	position: relative;
+
+	&-section {
+		@include tablets {
+			padding-top: 23%;
+		}
+	}
 }

@@ -48,8 +48,17 @@ button {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -100,15 +109,15 @@ img {
   max-width: 100%;
 }
 
-.hero {
+.hero-section {
   background: url("../img/image/bg.jpeg") top center/cover no-repeat #666;
-  height: 100vh;
+  height: 100%;
   min-height: 36.2rem;
   color: #fff;
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  .hero {
+  .hero-section {
     background: url("../img/image/bg-768.png") center center/cover no-repeat;
   }
 }
@@ -482,8 +491,7 @@ img {
 
 .btn {
   cursor: pointer;
-  width: 8.6667rem;
-  font-size: 0.8889rem;
+  font-size: 0.8888888889rem;
   font-weight: 800;
   padding: 1.1667rem 2.2778rem;
   text-transform: uppercase;
@@ -532,7 +540,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,7 +574,6 @@ img {
 }
 @media screen and (max-width: 768px) {
   .section__title {
-    padding-top: 23%;
     margin-bottom: 1.5555555556rem;
   }
 }
@@ -1097,7 +1104,7 @@ img {
 }
 
 .team-section {
-  margin-bottom: 9.9444444444rem;
+  position: relative;
 }
 
 .team {
@@ -1184,8 +1191,7 @@ img {
 }
 
 .team--version--desktop {
-  position: absolute;
-  top: 100%;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .team--version--desktop {
@@ -1215,9 +1221,97 @@ img {
   }
 }
 
+.product-menu-section {
+  background: url("/img/image/bg-vert-accord.png") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.product-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.product-menu-section__title {
+  position: absolute;
+  top: 5.625rem;
+  left: 5rem;
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .product-menu-section__title {
+    font-size: 2.2222222222rem;
+  }
+}
+.product-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.product-menu__title {
+  position: relative;
+  width: 100px;
+}
+.product-menu__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+.product-menu__container {
+  padding: 40px 73px 45px 26px;
+}
+.product-menu__close {
+  position: absolute;
+  top: 1.1111111111rem;
+  right: 1.3888888889rem;
+  border: none;
+  background: transparent;
+}
+.product-menu__text {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .product-menu__text {
+    font-size: 2.2222222222rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__title.product-menu-section__title {
+    top: 4.7222222222rem;
+    left: 2.2222222222rem;
+    padding-top: 0;
+  }
+}
+
 .slider-arrow {
   position: absolute;
-  width: 100%;
+  width: 98%;
   top: 47%;
   z-index: 10;
 }
@@ -1263,6 +1357,11 @@ img {
 .reviews {
   margin-bottom: 3.5556rem;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .reviews-section {
+    padding-top: 23%;
+  }
 }
 
 .reviews__display {
@@ -1414,6 +1513,24 @@ img {
   min-height: 36.2rem;
 }
 
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.player-container {
+  max-width: 36.7777777778rem;
+  max-height: 21.7777777778rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .player-container {
+    padding: 0 5%;
+    margin-bottom: 4.8333333333rem;
+  }
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1426,7 +1543,6 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 17%;
-    margin-bottom: 17%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1502,6 +1618,9 @@ img {
     height: 4.5555555556rem;
     margin-bottom: 0.2rem;
   }
+}
+.form__input.input-error {
+  border-color: #fe3fbe;
 }
 .form__input:focus {
   border-color: #FEDB3F;
@@ -1602,11 +1721,11 @@ img {
           transform: translate(-50%, -50%);
 }
 
+.map {
+  height: 100%;
+  width: 100%;
+}
 .map-section {
-  background: url("../img/image/map.png") top center no-repeat;
-  background-size: cover;
-  height: 100vh;
-  min-height: 36.2rem;
   position: relative;
 }
 
@@ -1725,13 +1844,17 @@ img {
 .fixed-menu {
   position: fixed;
   top: 30%;
-  right: 3%;
+  right: 2%;
   z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
     display: none;
   }
+}
+.fixed-menu--shadowed {
+  background: #646464;
+  opacity: 0.4;
 }
 
 .fixed-menu__item {
@@ -1745,18 +1868,17 @@ img {
 }
 
 .fixed-menu__link {
-  width: 0.8889rem;
-  height: 0.8889rem;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
-  border: 0.0556rem solid transparent;
+  border: 0.0555555556rem solid transparent;
   display: block;
   position: relative;
 }
-.fixed-menu__link::before {
-  content: "";
+.fixed-menu__link-icon {
   display: block;
-  width: 0.33rem;
-  height: 0.33rem;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #fff;
   position: absolute;
@@ -1764,4 +1886,24 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+.fixed-menu__link-icon--shadowed {
+  background: #000;
+}
+.fixed-menu__link:hover {
+  border-color: #fff;
+}
+
+.fancybox-content {
+  padding: 2.0555555556rem 3.6666666667rem;
+}
+
+.modal__container {
+  text-align: center;
+}
+
+.modal__content {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }

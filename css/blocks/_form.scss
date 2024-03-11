@@ -4,7 +4,7 @@
 		@include tablets {
 			flex-direction: column;
 			padding: 0 17%;
-			margin-bottom: 17%;
+			// margin-bottom: 17%;
 	}
 
 		@include phones {
@@ -58,6 +58,8 @@
 	// border: solid 0.1667rem #FEDB3F;
 	border: solid 0.1667rem transparent;
 
+	
+
 	@include tablets {
 		height: rem(36px);
 		padding: rem(8px) rem(10px);
@@ -72,6 +74,10 @@
 			height: rem(82px);
 			margin-bottom: 0.2rem;
 		}
+	}
+
+	&.input-error {
+		border-color: #fe3fbe;
 	}
 
 	&:focus {
@@ -106,3 +112,4 @@
 			justify-content: center;
 	}
 }
+

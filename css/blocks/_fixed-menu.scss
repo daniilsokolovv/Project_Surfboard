@@ -1,11 +1,16 @@
 .fixed-menu {
 	position: fixed;
 	top: 30%;
-	right: 3%;
+	right: 2%;
 	z-index: 100;
 
 	@include tablets {
 		display: none;
+	}
+
+	&--shadowed {
+		background: #646464;
+		opacity: .4;
 	}
 }
 
@@ -25,23 +30,43 @@
 
 
 .fixed-menu__link {
-	width: 0.8889rem;
-	height: 0.8889rem;
+	width: rem(16px);
+	height: rem(16px);
 	border-radius: 50%;
-	border: 0.0556rem solid transparent;
+	border: rem(1px) solid transparent;
 	display: block;
 	position: relative;
 
-	&::before {
-		content: "";
-		display: block;
-		width: 0.33rem;
-		height: 0.33rem;
-		border-radius: 50%;
-		background:#fff;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+
+		&-icon{
+			display: block;
+			width: rem(6px);
+			height: rem(6px);
+			border-radius: 50%;
+			background:#fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			&--shadowed {
+				background: #000;
+			}
+		}
+	// &:before {
+	// 	content: "";
+	// 	display: block;
+	// 	width: rem(6px);
+	// 	height: rem(6px);
+	// 	border-radius: 50%;
+	// 	background:#fff;
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// }
+
+	&:hover {
+		border-color: #fff;
 	}
 }

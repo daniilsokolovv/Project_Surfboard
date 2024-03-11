@@ -42,12 +42,14 @@ $mobiles: 390px;
 @import "blocks/parametrs";
 @import "blocks/product";
 @import "blocks/team";
+@import "blocks/product-menu";
 @import "blocks/slider-arrow";
 @import "blocks/reviews";
 @import "blocks/reviews__display";
 @import "blocks/reviews__switcher";
 @import "blocks/interactive-avatar";
 @import "blocks/order-section";
+@import "blocks/player";
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/map";
@@ -55,6 +57,7 @@ $mobiles: 390px;
 @import "blocks/contacts";
 @import "blocks/socials";
 @import "blocks/fixed-menu";
+@import "blocks/modal";
 
 
 
